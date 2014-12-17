@@ -2,10 +2,10 @@
 layout:default
 title:My Blog
 ---
-{{page.title}}
+{{ page.title }}
   最新文章
   
-  {%for post in site.posts%}
-  {{post.date}}{{post.title}}
+  {% for post in site.posts %}
+  {{ post.date|date:"%Y-%m-%d" }}{{ post.title }}
   {% endfor %}
   
